@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import './components/style/Sidebar.css'
 
-
-import Header from './components/header'
+// components
 import NavBar from './components/navbar'
 import Sidebar from './components/sidebar'
 import ProductList from './components/productList'
@@ -16,9 +16,6 @@ import Footer from './components/footer'
 function App() {
   return (
     <Container fluid>
-      <Jumbotron>
-        <Header></Header>
-      </Jumbotron>
       <NavBar></NavBar>
       <Jumbotron>
         <Row>

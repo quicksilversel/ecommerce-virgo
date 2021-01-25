@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import './style/Sidebar.css'
 
 export default class Sidebar extends Component {
     render(){
         return(
-            <div>
-                <p>Categories</p>
-                <h5>Women</h5>
-                <h5>Men</h5>
+            <div style={{ backgroundColor: "white"}}>
+            <Nav defaultActiveKey="/home" className="flex-column">
+                <Nav.Link href="/home">Active</Nav.Link>
+                <Nav.Link eventKey="link-1">Link</Nav.Link>
+                <Nav.Link eventKey="link-2">Link</Nav.Link>
+            </Nav>
             </div>
         )
     }
