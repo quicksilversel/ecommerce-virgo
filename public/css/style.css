@@ -1,0 +1,207 @@
+	/***
+    =============================================== 
+ 
+        Portfolio page 
+        Made by Sueun Lee
+        https://github.com/quicksilversel
+ 
+    =============================================== 
+	***/
+
+body {
+    margin:0;
+    padding:0;
+    background-color:#e7e7e7;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	color: gray;
+}
+
+
+/* font awesome */
+i{
+	padding: 5px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.container {
+	position:relative;
+	margin: 0 auto;
+	width: 65%;
+	background:#FFFFFF;
+	box-shadow: 0px 0px 15px #bdbdbd;	
+}
+
+.header {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	background-color: #FFFFFF;
+	font-size: 35px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+    border-bottom:1px solid #e7e7e7;
+	z-index: 10;
+}
+
+/* navigation start */
+nav {
+	position: relative;
+	background: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	background-color: #FFFFFF;
+	width: 100%;
+	font-size: 16px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+    border-bottom:1px solid #e7e7e7;
+	z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+  	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+.active a {
+	color: #c11603;
+}
+
+nav ul li a {
+	color:black;
+	position: relative;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-weight: 800;
+	margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color:#c11603;
+}
+
+nav ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #c11603;
+	height: 1px;
+}
+
+nav ul li a:hover:after {
+	width: 100%;
+}
+
+.navbar .navbar-nav {
+	text-align: center;
+}
+
+/* portfolio */
+
+/* footer */
+
+.footer{
+	position: relative;
+	z-index: 5;
+	background: #FFFFFF;
+	font: 1em/1.5em 'Voltaire';
+	font-size: 16px;
+	color: black;	
+	padding-top: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	border-top: 1px solid #e7e7e7;
+	
+}
+
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer i:hover{
+	opacity: 0.6;
+}
+
+/* about me */
+
+.article {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.about {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.major {
+	font-family: 'Karma', sans-serif;
+	text-align: left;
+	font-size: 20px;
+	color: #c11603;
+}
+
+.minor {
+	font-family: 'Roboto', sans-serif;
+}
+
+.minor h3 {
+	font-family: 'Karma', sans-serif;
+	font-size : 17px;
+	color: gray;
+	padding-bottom: 5%;
+}
+
+.skills {
+	padding-top: 3%;
+	padding-bottom : 3%;
+}
+
+/* contact */
+
+form {
+	padding-bottom : 3%;
+}
+
+.sidebar {
+	position:fixed;
+}
