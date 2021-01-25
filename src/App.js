@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
@@ -15,10 +15,12 @@ import Footer from './components/footer'
 
 function App() {
   return (
-    <Container>
+    <Container fluid>
       <Jumbotron>
         <Header></Header>
-        <NavBar></NavBar>
+      </Jumbotron>
+      <NavBar></NavBar>
+      <Jumbotron>
         <Row>
           <Col sm={4}>
             <Sidebar></Sidebar>
@@ -27,6 +29,8 @@ function App() {
             <ProductList></ProductList>
           </Col>
         </Row>
+      </Jumbotron>
+      <Jumbotron>
         <Footer></Footer>
       </Jumbotron>
     </Container>

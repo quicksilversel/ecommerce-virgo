@@ -11,15 +11,15 @@ export default class ProductList extends Component {
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
-                        <Card.Title>"Product 1"</Card.Title>
-                        <Card.Text>"$2.99"</Card.Text>
+                        <Card.Title>Product 1</Card.Title>
+                        <Card.Text>$2.99</Card.Text>
                     </Card.Body>
                 </Card>
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
-                        <Card.Title>"Product 2"</Card.Title>
-                        <Card.Text>"$5.99"</Card.Text>
+                        <Card.Title>Product 2</Card.Title>
+                        <Card.Text>$5.99</Card.Text>
                     </Card.Body>
                 </Card>
             </CardColumns>
