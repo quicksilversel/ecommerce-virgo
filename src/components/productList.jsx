@@ -1,35 +1,32 @@
-// product body 
-
 import React, { Component } from 'react'
+import ProductItem from './productItem'
 import CardColumns from 'react-bootstrap/CardColumns'
-import Card from 'react-bootstrap/Card'
 
 export default class ProductList extends Component {
+    constructor(props){
+        super(props);
+        this.state = { 
+            products : []
+        }; 
+    }
+    
+    componentDidMount() { 
+        fetch('http://localhost:8000/api/product/') 
+        .then(response => response.json())
+        .then( data => {
+            this.setState({ products : data }); 
+        })
+        .catch(err => {
+            console.log(err);
+        }) 
+    } 
     render(){
         return(
             <CardColumns>
-                <Card>
-                    <Card.Img variant="top" src="/images/product1.jpg" />
-                    <Card.Body>
-                        <Card.Title>Product 1</Card.Title>
-                        <Card.Text>$2.99</Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="/images/product2.jpg" />
-                    <Card.Body>
-                        <Card.Title>Product 2</Card.Title>
-                        <Card.Text>$5.99</Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="/images/product3.jpg" />
-                    <Card.Body>
-                        <Card.Title>Product 3</Card.Title>
-                        <Card.Text>$5.99</Card.Text>
-                    </Card.Body>
-                </Card>
+                {this.state.products.map( product => (
+                    <ProductItem product={product}/>
+                ))}
             </CardColumns>
-        )
+        );
     }
 }

@@ -1,10 +1,12 @@
 import './App.css'
+import React from 'react'
+
+// bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import './components/style/Sidebar.css'
 
 // components
 import NavBar from './components/navbar'

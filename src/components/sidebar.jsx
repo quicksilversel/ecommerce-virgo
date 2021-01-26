@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-import './style/Sidebar.css'
 
 export default class Sidebar extends Component {
     render(){
