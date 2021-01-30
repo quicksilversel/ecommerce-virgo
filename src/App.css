@@ -1,0 +1,56 @@
+
+
+.App {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+    height: 30px;
+    font-size:small;
+    background-color: black;
+}
+
+#navbar {
+    margin-top:30px;
+    font-family: 'Open Sans';
+    font-size: small;
+    background-color:white;
+}
+
+img {
+    width: 100%;
+}
+
+#products {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#footer {
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    font-size: larger;
+    text-align: center;
+}
+
+#company-info{
+    text-align: center;
+    padding-top:2%;
+    font-size: small;
+    line-height: 80%;
+    left:50%;
+}
+
+#copyright {
+    padding-top:2%;
+    font-size: xx-small;
+    text-align: center;
+}
+
+
+
+

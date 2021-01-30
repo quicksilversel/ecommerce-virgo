@@ -3,36 +3,30 @@ import React from 'react'
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import {Container, Jumbotron, Col, Row} from 'react-bootstrap'
 
 // components
+import Header from './components/header'
 import NavBar from './components/navbar'
-import Sidebar from './components/sidebar'
 import ProductList from './components/productList'
 import Footer from './components/footer'
 
 
+
 function App() {
   return (
-    <Container fluid>
-      <NavBar></NavBar>
-      <Jumbotron>
-        <Row>
-          <Col sm={4}>
-            <Sidebar></Sidebar>
-          </Col>
-          <Col sm={8}>
-            <ProductList></ProductList>
-          </Col>
-        </Row>
-      </Jumbotron>
-      <Jumbotron>
+    <div className="App">
+        <Header></Header>
+        <NavBar></NavBar>
+        <img src={"images/featured2.jpg"}></img>
+      <Container id="products">
+          <h1 className="text-center">Featured</h1>
+          <ProductList></ProductList>
+      </Container>
+      <Container fluid id="footer">
         <Footer></Footer>
-      </Jumbotron>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
