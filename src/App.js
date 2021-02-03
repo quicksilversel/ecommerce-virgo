@@ -1,32 +1,17 @@
 import './App.css'
 import React from 'react'
+import { Switch, Route } from 'react-router-dom';
 
-// bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css'
-import {Container, Jumbotron, Col, Row} from 'react-bootstrap'
-
-// components
-import Header from './components/header'
-import NavBar from './components/navbar'
-import ProductList from './components/productList'
-import Footer from './components/footer'
-
-
+// PAGES
+import Home from './pages/home';
+import Collections from './pages/collections';
 
 function App() {
   return (
-    <div className="App">
-        <Header></Header>
-        <NavBar></NavBar>
-        <img src={"images/featured2.jpg"}></img>
-      <Container id="products">
-          <h1 className="text-center">Featured</h1>
-          <ProductList></ProductList>
-      </Container>
-      <Container fluid id="footer">
-        <Footer></Footer>
-      </Container>
-    </div>
+    <Switch>
+      <Route exact path='/' component={Home}></Route>
+      <Route exact path='/collections' component={Collections}></Route>
+    </Switch>
   );
 }
 
