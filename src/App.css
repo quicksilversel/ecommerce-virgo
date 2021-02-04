@@ -1,7 +1,7 @@
 
 
-.App {
-    font-family: 'Montserrat', sans-serif;
+.App, .collections, .products {
+    font-family: 'Raleway', sans-serif;
 }
 
 #header {
@@ -12,7 +12,7 @@
 
 #navbar {
     margin-top:30px;
-    font-family: 'Open Sans';
+    font-family: 'Raleway', sans-serif;
     font-size: small;
     background-color:white;
 }
@@ -24,6 +24,11 @@ img {
 #featured {
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+#featured h1 {
+    margin: 2%;
+    font-family: "Yantramanav", sans-serif;
 }
 
 #footer {
@@ -51,6 +56,20 @@ img {
     text-align: center;
 }
 
+/* collections page */
 
+#productlist {
+    padding-top:5%;
+    justify-content: center;
+    align-items: center;
+}
 
+/* product details page */
 
+#productdetails img {
+    max-width: 24em;
+}
+
+#productdetails {
+    margin: 5%;
+}

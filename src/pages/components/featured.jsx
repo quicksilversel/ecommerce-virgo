@@ -27,19 +27,19 @@ export default class Featured extends Component {
                     <ProductItem product={product}/>
                 ))}
             <Card border="light">
-                <Card.Img variant="top" src={"images/sample1.jpg"} />
+                <Card.Img variant="top" src={"images/fashion1.jpg"} />
                 <Card.Body>
                     <Card.Title>One</Card.Title>
                 </Card.Body>
             </Card>
             <Card border="light">
-                <Card.Img variant="top" src={"images/sample2.jpg"} />
+                <Card.Img variant="top" src={"images/fashion2.jpg"} />
                 <Card.Body>
                     <Card.Title>Two</Card.Title>
                 </Card.Body>
             </Card>
             <Card border="light">
-                <Card.Img variant="top" src={"images/sample3.jpg"} />
+                <Card.Img variant="top" src={"images/fashion3.jpg"} />
                 <Card.Body>
                     <Card.Title>Three</Card.Title>
                 </Card.Body>

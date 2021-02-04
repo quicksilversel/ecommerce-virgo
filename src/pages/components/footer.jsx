@@ -9,7 +9,6 @@ export default class Footer extends Component {
                 <Row id="logo">
                     <Col>
                         <h1>Virgo</h1>
-                        <p style={{fontSize: "small"}}>A vintage photography company</p>
                     </Col>
                 </Row>
                 <Row id="company-info">

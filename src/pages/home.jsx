@@ -18,7 +18,7 @@ export default class Home extends Component {
                 <NavBar></NavBar>
                 <img src={"images/header.jpg"}></img>
               <Container id="featured">
-                  <h1 className="text-center">Featured</h1>
+                  <h1 className="text-center">2021 S/S Collection</h1>
                   <Featured></Featured>
               </Container>
               <Container fluid id="footer">
