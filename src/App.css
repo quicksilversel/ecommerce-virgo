@@ -1,6 +1,6 @@
 
 
-.App, .collections, .products {
+.App, .collections, .products, .about {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -71,5 +71,11 @@ img {
 }
 
 #productdetails {
+    margin: 5%;
+}
+
+/* about us page */
+
+#about {
     margin: 5%;
 }

@@ -12,7 +12,7 @@ export default class NavBar extends Component {
                     <Nav className="ml-auto">
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                     <Nav.Link as={Link} to="/collections">Shop</Nav.Link>
-                    <Nav.Link href="#link">Magazine</Nav.Link>
+                    <Nav.Link as={Link} to ="/about">About Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
