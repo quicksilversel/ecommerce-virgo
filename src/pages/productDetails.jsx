@@ -23,9 +23,7 @@ export default class ProductDetails extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Container fluid id="footer">
-                    <Footer/>
-                </Container>
+                <Footer/>
             </div>
         )
     }

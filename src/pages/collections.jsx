@@ -14,9 +14,7 @@ export default class Collections extends Component {
                 <Header></Header>
                 <NavBar></NavBar>
                 <ProductList></ProductList>
-                <Container fluid id="footer">
-                    <Footer></Footer>
-                </Container>
+                <Footer></Footer>
             </div>
         )
     }

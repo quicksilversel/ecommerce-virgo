@@ -28,9 +28,7 @@ export default class About extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Container fluid id="footer">
-                    <Footer></Footer>
-                </Container>
+                <Footer></Footer>
             </div>
         );
     }
