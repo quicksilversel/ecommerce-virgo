@@ -3,7 +3,7 @@ import ProductItem from './productItem'
 import {Card, CardColumns, Row, Col, Container} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
-export default class ProductList extends Component {
+export default class Featured extends Component {
     render(){
         return(
             <Container id="productlist">

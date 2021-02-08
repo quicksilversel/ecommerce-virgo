@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import ProductItem from './productItem'
 import {Card, CardColumns} from 'react-bootstrap'
 
-export default class Featured extends Component {
-    // data will be retreived from django server. the samples provided below are examples.
+export default class ProductList extends Component {
+    // please run the django server for data. the objects provided below are samples.
     constructor(props){
         super(props);
         this.state = { 
