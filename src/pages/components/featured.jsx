@@ -12,7 +12,7 @@ export default class Featured extends Component {
                         <Card border="light">
                             <Card.Img variant="top" src={"images/fashion1.jpg"} />
                             <Card.Body>
-                                <Card.Title as={Link} to="/products">One</Card.Title>
+                                <Card.Title>One</Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
