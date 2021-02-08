@@ -12,12 +12,12 @@ export default class Footer extends Component {
                     </Col>
                 </Row>
                 <Row id="company-info">
-                        <Col sm={2} ><p>NewsLetter</p></Col>
-                        <Col sm={2}><p>Contact</p></Col>
-                        <Col sm={2}><p>App</p></Col>
-                        <Col sm={2}><p>Follow Us</p></Col>
-                        <Col sm={2}><p>Privacy</p></Col>
-                        <Col sm={2}><p>Cookies</p></Col>
+                        <Col sm={2} ><a href="#">NewsLetter</a></Col>
+                        <Col sm={2}><a href="#">Contact</a></Col>
+                        <Col sm={2}><a href="#">App</a></Col>
+                        <Col sm={2}><a href="#">Follow Us</a></Col>
+                        <Col sm={2}><a href="#">Privacy</a></Col>
+                        <Col sm={2}><a href="#">Cookies</a></Col>
                     </Row>
                 <Row>
                     <Col id="copyright">

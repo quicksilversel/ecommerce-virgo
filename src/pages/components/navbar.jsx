@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default class NavBar extends Component {
     render(){
         return(
-            <Navbar fixed="top" id="navbar" expand="lg">
+            <Navbar fixed="top" id="navbar" expand="sm">
                 <Navbar.Brand as={Link} to="/">Virgo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

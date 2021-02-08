@@ -32,6 +32,15 @@ img {
     font-family: "Yantramanav", sans-serif;
 }
 
+#featured a {
+    text-decoration: none;
+    color: black;
+    padding:1%;
+    font-family: "Yantramanav", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 #footer {
     padding: 2%;
     background-color: black;
@@ -43,12 +52,18 @@ img {
     text-align: center;
 }
 
-#company-info{
+#company-info {
     text-align: center;
     padding-top:2%;
+    padding-bottom: 2%; 
     font-size: small;
     line-height: 80%;
     left:50%;
+}
+
+#company-info a {
+    text-decoration: none;
+    color: white;
 }
 
 #copyright {
@@ -65,18 +80,79 @@ img {
     align-items: center;
 }
 
+#productlist .card-title {
+    font-size: 20px;
+    font-family: "Yantramanav", sans-serif;
+    padding: 1%;
+}
+
+#productlist .card-text {
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    padding: 1%;
+}
+
+#productlist a {
+    text-decoration: none;
+    color: black;
+}
+
 /* product details page */
 
 #productdetails img {
-    max-width: 24em;
+    max-width: 40em;
 }
 
 #productdetails {
     margin: 5%;
+    font-family: "Roboto", sans-serif;
+}
+
+#productdetails #productName {
+    font-size: 70px;
+    font-family: "Yantramanav", sans-serif;
+    text-transform: uppercase;
+}
+
+#productdetails #productPrice {
+    font-size: 30px;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+
+#cartButton {
+    width: 30%;
+	border: 2px solid black;
+	color: black;
+	padding: 1% 5%;
+	font-size: 20px;
+	font-family: "Yantramanav", sans-serif;
+	text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+}
+
+#cartButton:hover {
+    background-color: black;
+	color: white;
+	text-decoration: none;
 }
 
 /* about us page */
 
 #about {
     margin: 5%;
+}
+
+#about h1 {
+    font-family: "Yantramanav", sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+#about img {
+    max-width: 40em;
+}
+
+#about col {
+    padding: 5%;
 }

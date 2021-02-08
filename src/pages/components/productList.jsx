@@ -3,7 +3,6 @@ import ProductItem from './productItem'
 import {Card, CardColumns} from 'react-bootstrap'
 
 export default class ProductList extends Component {
-    // please run the django server for data. the objects provided below are samples.
     constructor(props){
         super(props);
         this.state = { 
@@ -26,25 +25,30 @@ export default class ProductList extends Component {
                 {this.state.products.map( product => (
                     <ProductItem product={product}/>
                 ))}
-            <Card border="light">
-                <Card.Img variant="top" src={"images/fashion1.jpg"} />
-                <Card.Body>
-                    <Card.Title>One</Card.Title>
-                </Card.Body>
-            </Card>
-            <Card border="light">
-                <Card.Img variant="top" src={"images/fashion2.jpg"} />
-                <Card.Body>
-                    <Card.Title>Two</Card.Title>
-                </Card.Body>
-            </Card>
-            <Card border="light">
-                <Card.Img variant="top" src={"images/fashion3.jpg"} />
-                <Card.Body>
-                    <Card.Title>Three</Card.Title>
-                </Card.Body>
-            </Card>
             </CardColumns>
         );
     }
 }
+
+// sample products for viewing purpose. please connect to django server for products data.
+
+/* 
+<Card border="light">
+        <Card.Img variant="top" src={"images/fashion1.jpg"} />
+        <Card.Body>
+            <Card.Title>One</Card.Title>
+        </Card.Body>
+    </Card>
+    <Card border="light">
+        <Card.Img variant="top" src={"images/fashion2.jpg"} />
+        <Card.Body>
+            <Card.Title>Two</Card.Title>
+        </Card.Body>
+    </Card>
+    <Card border="light">
+        <Card.Img variant="top" src={"images/fashion3.jpg"} />
+        <Card.Body>
+            <Card.Title>Three</Card.Title>
+        </Card.Body>
+    </Card> 
+    */

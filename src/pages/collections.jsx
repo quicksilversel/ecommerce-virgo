@@ -13,7 +13,9 @@ export default class Collections extends Component {
             <div className="collections">
                 <Header></Header>
                 <NavBar></NavBar>
-                <ProductList></ProductList>
+                <Container id="productlist">
+                    <ProductList></ProductList>
+                </Container>
                 <Footer></Footer>
             </div>
         )

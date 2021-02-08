@@ -11,7 +11,7 @@ const ProductItem = props => {
                 <Card.Img variant="top" src={imageURL}/>
             </Link>
             <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
+                <Card.Title as={Link} to={`/collections/${product.id}`}>{product.name}</Card.Title>
                 <Card.Text>${product.price}</Card.Text>
             </Card.Body>
         </Card>
