@@ -7,7 +7,7 @@ import Header from './components/header';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 
-const signupPage = () => {
+const SignupPage = () => {
     const dispatch = React.useContext(AuthContext);
     const initialState = {
       username: "",
@@ -23,7 +23,7 @@ const signupPage = () => {
         });
         };
 
-    const handleSignup = (event) => {
+    const handleSignup = event => {
         event.preventDefault();
         setData({
             ...data,
@@ -41,6 +41,12 @@ const signupPage = () => {
                 password: data.password
             })
         })
+        .then(res => {
+            if (res.ok) {
+              return res.json();
+            }
+            throw res;
+          })
         .then(resJson => {
             dispatch({
                 type: "LOGIN",
@@ -55,14 +61,13 @@ const signupPage = () => {
             });
           });
       };
-
     return(
-        <div>
+        <div className="signuppage">
             <Header/>
             <NavBar/>
             <div className="login-container">
                 <div className="card">
-                    <div className="container">
+                    <div className="card-container">
                         <form onSubmit={handleSignup}>
                             <h1>Sign Up</h1>
 
@@ -96,7 +101,7 @@ const signupPage = () => {
                             {data.isSubmitting ? (
                                 "Loading..."
                             ) : (
-                                "Login"
+                                "Sign Up"
                             )}
                             </button>
                         </form>
@@ -108,4 +113,4 @@ const signupPage = () => {
     )
 }
 
-export default signupPage;
+export default SignupPage;

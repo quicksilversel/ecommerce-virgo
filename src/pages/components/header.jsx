@@ -11,24 +11,24 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case "LOGIN":
-      localStorage.setItem("user", JSON.stringify(action.payload.user));
-      localStorage.setItem("token", JSON.stringify(action.payload.token));
-      return {
-        ...state,
-        logged_in : true,
-        user: action.payload.user,
-        token: action.payload.token
+        localStorage.setItem("user", JSON.stringify(action.payload.user));
+        localStorage.setItem("token", JSON.stringify(action.payload.token));
+        return {
+            ...state,
+            logged_in : true,
+            user: action.payload.user,
+            token: action.payload.token
       };
     case "LOGOUT":
-      localStorage.clear();
-      return {
-        ...state,
-        logged_in: false,
-        user: null
-      };
+        localStorage.clear();
+        return {
+            ...state,
+            logged_in: false,
+            user: null
+        };
     default:
-      return state;
-  }
+        return state;
+    }
 };
 
 const Header = () => {

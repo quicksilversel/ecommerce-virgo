@@ -7,7 +7,8 @@ import Home from './pages/home';
 import Collections from './pages/collections';
 import ProductDetails from './pages/productDetails';
 import About from './pages/about';
-import LoginPage from './pages/loginPage'
+import LoginPage from './pages/loginPage';
+import SignupPage from './pages/signupPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path='/collections/:id' component={ProductDetails}></Route>
       <Route exact path='/about' component={About}></Route>
       <Route exact path='/login' component={LoginPage}></Route>
+      <Route exact path='/signup' component={SignupPage}></Route>
     </Switch>
   );
 }

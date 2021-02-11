@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from 'react-bootstrap';
 import { AuthContext } from './components/header';
 
 // components
@@ -22,7 +21,7 @@ const LoginPage = () => {
             [event.target.name]: event.target.value
         });
         };
-    const handleFormSubmit = event => {
+    const handleLogin = event => {
         event.preventDefault();
         setData({
             ...data,
@@ -60,38 +59,18 @@ const LoginPage = () => {
           });
         });
     };
-
-    /* const handle_signup = (e, data) => {
-        e.preventDefault();
-        fetch('http://localhost:8000/users/users/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(json => {
-            localStorage.setItem('token', json.token);
-            this.setState({
-              logged_in: true,
-              username: json.username
-            });
-        });
-      }; */
-
     return(
-        <div>
+        <div className="loginpage">
             <Header/>
             <NavBar/>
             <div className="login-container">
-                <div className="card">
-                    <div className="container">
-                        <form onSubmit={handleFormSubmit}>
+                <div className="login-card">
+                    <div className="card-container">
+                        <form onSubmit={handleLogin}>
                             <h1>Login</h1>
 
                             <label htmlFor="username">
-                            Username
+                            Username 
                             <input
                                 type="text"
                                 value={data.username}
@@ -102,7 +81,7 @@ const LoginPage = () => {
                             </label>
 
                             <label htmlFor="password">
-                            Password
+                            Password 
                             <input
                                 type="password"
                                 value={data.password}
