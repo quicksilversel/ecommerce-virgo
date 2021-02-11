@@ -153,6 +153,16 @@ img {
     max-width: 40em;
 }
 
-#about col {
-    padding: 5%;
+/* login  page */
+
+#center {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
