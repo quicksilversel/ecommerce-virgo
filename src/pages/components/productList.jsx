@@ -1,34 +1,46 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import ProductItem from './productItem'
+import SearchBar from './searchBar'
 import {Card, CardColumns} from 'react-bootstrap'
 
-export default class ProductList extends Component {
-    constructor(props){
-        super(props);
-        this.state = { 
-            products : []
-        }; 
-    }
-    componentDidMount() { 
-        fetch('http://localhost:8000/api/product/') 
+const ProductList = (props) => {
+    const [input, setInput] = useState('');
+    const [productListDefault, setProductListDefault] = useState([]);
+    const [productList, setProductList] = useState([]);
+  
+    const fetchData = async () => {
+      return await fetch('http://localhost:8000/api/product/')
         .then(response => response.json())
-        .then( data => {
-            this.setState({ products : data }); 
-        })
-        .catch(err => {
-            console.log(err);
-        }) 
-    } 
-    render(){
-        return(
-            <CardColumns>
-                {this.state.products.map( product => (
-                    <ProductItem product={product}/>
-                ))}
-            </CardColumns>
-        );
+        .then(data => {
+           setProductList(data) 
+           setProductListDefault(data)
+         });}
+  
+    const updateInput = async (input) => {
+       const filtered = productListDefault.filter(product => {
+        return product.name.toLowerCase().includes(input.toLowerCase())
+       })
+       setInput(input);
+       setProductList(filtered);
     }
+  
+    useEffect( () => {fetchData()},[]);
+    return(
+        <>
+        <SearchBar        
+        keyword={input} 
+        setKeyword={updateInput}/>
+        <CardColumns>
+            {productList.map( product => (
+                <ProductItem product={product}/>
+            ))}
+        </CardColumns>
+        </>
+    );
+
 }
+
+export default ProductList
 
 // sample products for viewing purpose. please connect to django server for products data.
 
@@ -51,4 +63,4 @@ export default class ProductList extends Component {
             <Card.Title>Three</Card.Title>
         </Card.Body>
     </Card> 
-    */
+*/

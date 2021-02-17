@@ -1,12 +1,15 @@
 import React from 'react';
 import { AuthContext } from './components/header';
+import {useHistory} from 'react-router-dom';
 
 // components
 import Header from './components/header';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 
+
 const LoginPage = () => {
+    const history = useHistory()
     const dispatch = React.useContext(AuthContext);
     const initialState = {
       username: "",
@@ -50,6 +53,7 @@ const LoginPage = () => {
               type: "LOGIN",
               payload: resJson
           })
+          history.push('/');
         })
         .catch(error => {
           setData({
@@ -66,7 +70,7 @@ const LoginPage = () => {
             <div className="login-container">
                 <div className="login-card">
                     <div className="card-container">
-                        <form onSubmit={handleLogin}>
+                        <form onSubmit={(e)=>handleLogin(e, dispatch)}>
                             <h1>Login</h1>
 
                             <label htmlFor="username">
@@ -74,9 +78,10 @@ const LoginPage = () => {
                             <input
                                 type="text"
                                 value={data.username}
-                                onChange={handleInputChange}
+                                onChange={(e)=>handleInputChange(e, dispatch)}
                                 name="username"
                                 id="username"
+                                style={{"margin-left": "2%"}}
                             />
                             </label>
 
@@ -85,9 +90,10 @@ const LoginPage = () => {
                             <input
                                 type="password"
                                 value={data.password}
-                                onChange={handleInputChange}
+                                onChange={(e)=>handleInputChange(e, dispatch)}
                                 name="password"
                                 id="password"
+                                style={{"margin-left": "2%"}}
                             />
                             </label>
 
