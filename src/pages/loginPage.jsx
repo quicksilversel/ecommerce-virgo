@@ -1,6 +1,6 @@
 import React from 'react';
-import { AuthContext } from './components/header';
-import {useHistory} from 'react-router-dom';
+import { AuthContext } from '../App';
+import { useHistory } from 'react-router-dom';
 
 // components
 import Header from './components/header';
@@ -10,7 +10,7 @@ import Footer from './components/footer';
 
 const LoginPage = () => {
     const history = useHistory()
-    const dispatch = React.useContext(AuthContext);
+    const {dispatch} = React.useContext(AuthContext);
     const initialState = {
       username: "",
       password: "",

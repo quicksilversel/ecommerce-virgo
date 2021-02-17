@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
-import { AuthContext } from './components/header';
+import { AuthContext } from '../App';
 
 // components
 import Header from './components/header';
