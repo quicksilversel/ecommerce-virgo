@@ -81,7 +81,6 @@ const LoginPage = () => {
                                 onChange={(e)=>handleInputChange(e, dispatch)}
                                 name="username"
                                 id="username"
-                                style={{"margin-left": "2%"}}
                             />
                             </label>
 
@@ -93,7 +92,6 @@ const LoginPage = () => {
                                 onChange={(e)=>handleInputChange(e, dispatch)}
                                 name="password"
                                 id="password"
-                                style={{"margin-left": "2%"}}
                             />
                             </label>
 

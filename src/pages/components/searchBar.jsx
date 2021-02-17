@@ -7,7 +7,7 @@ const SearchBar = ({keyword,setKeyword}) => {
       key="random1"
       value={keyword}
       placeholder={"search products"}
-      onInput ={(e) => setKeyword(e.target.value)}
+      onInput ={ e => setKeyword(e.target.value)}
       />
     );
 }
