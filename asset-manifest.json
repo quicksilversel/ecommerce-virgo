@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ecommerce-virgo/static/css/main.7546ae24.chunk.css",
+    "main.js": "/ecommerce-virgo/static/js/main.57f66c96.chunk.js",
+    "main.js.map": "/ecommerce-virgo/static/js/main.57f66c96.chunk.js.map",
+    "runtime-main.js": "/ecommerce-virgo/static/js/runtime-main.06bc2fca.js",
+    "runtime-main.js.map": "/ecommerce-virgo/static/js/runtime-main.06bc2fca.js.map",
+    "static/css/2.150d169a.chunk.css": "/ecommerce-virgo/static/css/2.150d169a.chunk.css",
+    "static/js/2.60a4d82d.chunk.js": "/ecommerce-virgo/static/js/2.60a4d82d.chunk.js",
+    "static/js/2.60a4d82d.chunk.js.map": "/ecommerce-virgo/static/js/2.60a4d82d.chunk.js.map",
+    "static/js/3.bc4ef139.chunk.js": "/ecommerce-virgo/static/js/3.bc4ef139.chunk.js",
+    "static/js/3.bc4ef139.chunk.js.map": "/ecommerce-virgo/static/js/3.bc4ef139.chunk.js.map",
+    "index.html": "/ecommerce-virgo/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/ecommerce-virgo/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.7546ae24.chunk.css.map": "/ecommerce-virgo/static/css/main.7546ae24.chunk.css.map",
+    "static/js/2.60a4d82d.chunk.js.LICENSE.txt": "/ecommerce-virgo/static/js/2.60a4d82d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06bc2fca.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.60a4d82d.chunk.js",
+    "static/css/main.7546ae24.chunk.css",
+    "static/js/main.57f66c96.chunk.js"
+  ]
+}
