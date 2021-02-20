@@ -27,7 +27,7 @@ class ProductDetails extends Component {
             return <div />
         }
         const product = this.state.products.find(p => p.id.toString() === this.props.match.params.id)
-        let imageURL = product.image.replace("/Users/zoe/portfolio/react_ecommerce/public","");
+        let imageURL = product.image.replace("/Users/zoe/portfolio/react_ecommerce/public/","");
         return(
             <div class="products">
                 <Header/>
